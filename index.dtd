@@ -1,0 +1,31 @@
+<!DOCTYPE Empresa [
+
+    <!-- Elemento raíz -->
+    <!ELEMENT Empresa (Departamentos, Proyectos)>
+
+    <!-- Sección de Departamentos -->
+    <!ELEMENT Departamentos (Departamento+)>
+
+    <!ELEMENT Departamento (Nombre, Empleados)>
+    <!ATTLIST Departamento
+        id      CDATA   #REQUIRED
+        tipo    CDATA   #REQUIRED
+    >
+
+    <!ELEMENT Nombre (#PCDATA)>
+
+    <!ELEMENT Empleados (EmpleadoID+)>
+
+    <!ELEMENT EmpleadoID (#PCDATA)>
+
+    <!-- Sección de Proyectos -->
+    <!ELEMENT Proyectos (Proyecto+)>
+
+    <!ELEMENT Proyecto (Nombre, Presupuesto, Empleados)>
+    <!ATTLIST Proyecto
+        id      CDATA   #REQUIRED
+        tipo    CDATA   #REQUIRED
+    >
+
+    <!ELEMENT Presupuesto (#PCDATA)>
+

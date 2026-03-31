@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Empresa SYSTEM "empresa.dtd">
+
+<Empresa>
+
+    <Departamentos>
+        <Departamento id="D01" tipo="Marketing">
+            <Nombre>Marketing</Nombre>
+            <Empleados>
+                <EmpleadoID>E01</EmpleadoID>
+                <EmpleadoID>E02</EmpleadoID>
+            </Empleados>
+        </Departamento>
+
+        <Departamento id="D02" tipo="RRHH">
+            <Nombre>Recursos Humanos</Nombre>
+            <Empleados>
+                <EmpleadoID>E03</EmpleadoID>
+            </Empleados>
+        </Departamento>
+    </Departamentos>
+
+    <Proyectos>
+        <Proyecto id="P01" tipo="Investigación">
+            <Nombre>Estudio de Mercado</Nombre>
+            <Presupuesto>15000</Presupuesto>
+            <Empleados>
+                <EmpleadoID>E01</EmpleadoID>
+            </Empleados>
+        </Proyecto>
+
+        <Proyecto id="P02" tipo="Desarrollo">
+            <Nombre>Nuevo CRM</Nombre>
+            <Presupuesto>45000</Presupuesto>
+            <Empleados>
+                <EmpleadoID>E02</EmpleadoID>
+                <EmpleadoID>E03</EmpleadoID>
+            </Empleados>
+        </Proyecto>
+    </Proyectos>
+
+</Empresa>
