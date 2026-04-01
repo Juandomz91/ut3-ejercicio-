@@ -1,0 +1,24 @@
+<!ELEMENT Empresa (Departamentos, Proyectos)>
+
+<!ELEMENT Departamentos (Departamento+)>
+
+<!ELEMENT Departamento (Nombre, Empleados)>
+<!ATTLIST Departamento
+    id      ID      #REQUIRED
+    tipo    CDATA   #REQUIRED
+>
+
+<!ELEMENT Nombre (#PCDATA)>
+
+<!ELEMENT Empleados (EmpleadoID+)>
+<!ELEMENT EmpleadoID (#PCDATA)>
+
+<!ELEMENT Proyectos (Proyecto+)>
+
+<!ELEMENT Proyecto (Nombre, Presupuesto, Empleados)>
+<!ATTLIST Proyecto
+    id      ID      #REQUIRED
+    tipo    CDATA   #REQUIRED
+>
+
+<!ELEMENT Presupuesto (#PCDATA)>
